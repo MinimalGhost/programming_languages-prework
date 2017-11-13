@@ -38,7 +38,9 @@ def reformat_languages(languages)
       new_hash[lang] = type
       if lang == :ruby
         new_hash[lang].merge!({:style => [:oo]})
-      end
+      elsif lang == :javascript
+
+      elsif
       # binding.pry
     end
   end
