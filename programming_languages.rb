@@ -49,7 +49,7 @@ def reformat_languages(languages)
       elsif lang == :erlang
         new_hash[lang].merge!({:style => [:functional]})
       elsif lang == :scala
-
+        new_hash[lang].merge!({:style => [:functional]})
       end
       # binding.pry
     end
