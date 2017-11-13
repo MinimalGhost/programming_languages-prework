@@ -38,7 +38,7 @@ def reformat_languages(languages)
       new_hash[lang] = type
       case lang
       when lang == :ruby
-
+        new_hash[lang].merge!({:style => [:oo]})
       end
       if lang == :ruby
         new_hash[lang].merge!({:style => [:oo]})
