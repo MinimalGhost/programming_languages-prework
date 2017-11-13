@@ -36,25 +36,21 @@ def reformat_languages(languages)
   languages.each do |k, v|
     v.each do |lang, type|
       new_hash[lang] = type
-      case lang
-      when lang == :ruby
+      if lang == :ruby
         new_hash[lang].merge!({:style => [:oo]})
+      elsif lang == :javascript
+        new_hash[lang].merge!({:style => [:oo, :functional]})
+      elsif lang == :python
+        new_hash[lang].merge!({:style => [:oo]})
+      elsif lang == :java
+        new_hash[lang].merge!({:style => [:oo]})
+      elsif lang == :clojure
+        new_hash[lang].merge!({:style => [:functional]})
+      elsif lang == :erlang
+        new_hash[lang].merge!({:style => [:functional]})
+      elsif lang == :scala
+        new_hash[lang].merge!({:style => [:functional]})
       end
-      # if lang == :ruby
-      #   new_hash[lang].merge!({:style => [:oo]})
-      # elsif lang == :javascript
-      #   new_hash[lang].merge!({:style => [:oo, :functional]})
-      # elsif lang == :python
-      #   new_hash[lang].merge!({:style => [:oo]})
-      # elsif lang == :java
-      #   new_hash[lang].merge!({:style => [:oo]})
-      # elsif lang == :clojure
-      #   new_hash[lang].merge!({:style => [:functional]})
-      # elsif lang == :erlang
-      #   new_hash[lang].merge!({:style => [:functional]})
-      # elsif lang == :scala
-      #   new_hash[lang].merge!({:style => [:functional]})
-      # end
       # binding.pry
     end
   end
