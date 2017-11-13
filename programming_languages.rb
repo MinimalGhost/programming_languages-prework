@@ -42,11 +42,11 @@ def reformat_languages(languages)
         new_hash[lang].merge!({:style => [:oo, :functional]})
       elsif lang == :python
         new_hash[lang].merge!({:style => [:oo]})
-      elsif
+      elsif lang == :java
+
+      elsif lang == :clojure
 
       elsif
-
-      elsif 
 
       end
       # binding.pry
