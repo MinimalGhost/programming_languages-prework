@@ -51,11 +51,9 @@ def reformat_languages(languages)
       elsif lang == :scala
         new_hash[lang].merge!({:style => [:functional]})
       end
-      # binding.pry
     end
   end
   new_hash
-  # binding.pry
 end
 
 
