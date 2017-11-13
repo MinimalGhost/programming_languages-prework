@@ -38,7 +38,6 @@ def reformat_languages(languages)
       new_hash[lang] = type
       if lang == :ruby
         new_hash[lang].merge!({:style => [:oo]})
-        # binding.pry
       end
       # binding.pry
     end
