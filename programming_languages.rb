@@ -40,7 +40,9 @@ def reformat_languages(languages)
         new_hash[lang].merge!({:style => [:oo]})
       elsif lang == :javascript
         new_hash[lang].merge!({:style => [:oo, :functional]})
-      elsif
+      elsif lang == :python
+
+      end
       # binding.pry
     end
   end
