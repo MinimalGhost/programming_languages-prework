@@ -46,7 +46,9 @@ def reformat_languages(languages)
 
       elsif lang == :clojure
 
-      elsif
+      elsif lang == :erlang
+
+      elsif lang == :scala
 
       end
       # binding.pry
