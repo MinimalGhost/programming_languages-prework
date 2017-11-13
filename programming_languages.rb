@@ -42,7 +42,7 @@ def reformat_languages(languages)
         new_hash[lang].merge!({:style => [:oo, :functional]})
       elsif lang == :python
 
-      end
+      elsif
       # binding.pry
     end
   end
