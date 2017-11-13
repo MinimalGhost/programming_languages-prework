@@ -47,7 +47,7 @@ def reformat_languages(languages)
       elsif lang == :clojure
         new_hash[lang].merge!({:style => [:functional]})
       elsif lang == :erlang
-
+        new_hash[lang].merge!({:style => [:functional]})
       elsif lang == :scala
 
       end
